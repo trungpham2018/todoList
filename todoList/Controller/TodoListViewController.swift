@@ -34,9 +34,28 @@ class TodoListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Itemcell", for: indexPath)
         cell.textLabel?.text = itemArray[indexPath.row]
-
+        cell.accessoryType = UITableViewCellAccessoryType.none
         return cell
     }
- 
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        if tableView.cellForRow(at: indexPath)?.accessoryType == .checkmark {
+            tableView.cellForRow(at: indexPath)?.accessoryType = .none
+        }
+        else {
+            tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+        }
+    }
+//        if tableView.cellForRow(at: indexPath)?.accessoryType == .none {
+//            tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+//        }
+//        else {
+//            tableView.cellForRow(at: indexPath)?.accessoryType = .none
+//        }
+//    }
+ 
+    
 }
