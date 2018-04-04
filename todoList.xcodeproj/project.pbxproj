@@ -57,14 +57,38 @@
 			isa = PBXGroup;
 			children = (
 				54E60C782075185E00BDB79E /* AppDelegate.swift */,
-				54E60C7A2075185E00BDB79E /* ViewController.swift */,
-				54E60C7C2075185E00BDB79E /* Main.storyboard */,
+				54E60C8E207518E400BDB79E /* Model */,
+				54E60C8D207518D400BDB79E /* Controller */,
+				54E60C8F2075190400BDB79E /* View */,
 				54E60C822075185E00BDB79E /* Assets.xcassets */,
 				54E60C842075185E00BDB79E /* LaunchScreen.storyboard */,
 				54E60C872075185E00BDB79E /* Info.plist */,
-				54E60C7F2075185E00BDB79E /* todoList.xcdatamodeld */,
 			);
 			path = todoList;
+			sourceTree = "<group>";
+		};
+		54E60C8D207518D400BDB79E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				54E60C7A2075185E00BDB79E /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		54E60C8E207518E400BDB79E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				54E60C7F2075185E00BDB79E /* todoList.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		54E60C8F2075190400BDB79E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54E60C7C2075185E00BDB79E /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +304,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = todoList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.trungpham.todoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -294,6 +319,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = todoList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.trungpham.todoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
